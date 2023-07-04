@@ -1,5 +1,5 @@
 {
-  "name": "employee-attendance-system-client-side",
+  "name": "employee-management-client",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",

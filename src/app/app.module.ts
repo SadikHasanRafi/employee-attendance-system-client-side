@@ -3,48 +3,54 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './Components/navbar/navbar.component';
-import { FooterComponent } from './Components/footer/footer.component';
-import { LoginComponent } from './Pages/login/login.component';
-import { SignupComponent } from './Pages/signup/signup.component';
-import { ApprovalComponent } from './Pages/approval/approval.component';
-import { SetupEmployeeProfileComponent } from './Pages/setup-employee-profile/setup-employee-profile.component';
-import { DashboardComponent } from './Pages/dashboard/dashboard.component';
-import { LayoutComponent } from './layout/layout.component';
-import { EmployeeProfileComponent } from './Pages/employee-profile/employee-profile.component';
-import { UpdateEmployeeProfileComponent } from './Pages/update-employee-profile/update-employee-profile.component';
-import { GiveAttendanceComponent } from './Pages/give-attendance/give-attendance.component';
-import { ApplicationStatusComponent } from './Pages/application-status/application-status.component';
-import { ApplyForLeaveComponent } from './Pages/apply-for-leave/apply-for-leave.component';
-import { AdminProfileComponent } from './Pages/admin-profile/admin-profile.component';
-import { EmployeeRegistrationRequestComponent } from './Pages/employee-registration-request/employee-registration-request.component';
-import { EmployeeLeaveRequestComponent } from './Pages/employee-leave-request/employee-leave-request.component';
-import { EmployeeOnLeaveListComponent } from './Pages/employee-on-leave-list/employee-on-leave-list.component';
-import { AllRegisteredEmployeesComponent } from './Pages/all-registered-employees/all-registered-employees.component';
-import { UpdateCompnayInformationComponent } from './Pages/update-compnay-information/update-compnay-information.component';
+import { ApprovalComponent } from './pages/employee/approval/approval.component';
+import { SetEmployeeProfileComponent } from './pages/employee/set-employee-profile/set-employee-profile.component';
+import { EmployeeMyProfileComponent } from './pages/employee/employee-my-profile/employee-my-profile.component';
+import { EmployeeUpdateMyProfileComponent } from './pages/employee/employee-update-my-profile/employee-update-my-profile.component';
+import { EmployeeApplyLeaveComponent } from './pages/employee/employee-apply-leave/employee-apply-leave.component';
+import { EmployeeApplicationStatusComponent } from './pages/employee/employee-application-status/employee-application-status.component';
+import { EmployeeGiveAttendanceComponent } from './pages/employee/employee-give-attendance/employee-give-attendance.component';
+import { LoginComponent } from './pages/common/login/login.component';
+import { SignupComponent } from './pages/common/signup/signup.component';
+import { SetOfficeProfileComponent } from './pages/office/set-office-profile/set-office-profile.component';
+import { OfficeMyProfileComponent } from './pages/office/office-my-profile/office-my-profile.component';
+import { UpdateOfficeInformationComponent } from './pages/office/update-office-information/update-office-information.component';
+import { ShowAllEmployeeComponent } from './pages/office/show-all-employee/show-all-employee.component';
+import { OfficeRegistrationRequestsComponent } from './pages/office/office-registration-requests/office-registration-requests.component';
+import { OfficeAllLeaveRequestsComponent } from './pages/office/office-all-leave-requests/office-all-leave-requests.component';
+import { OfficeShowEmployeeDetailsComponent } from './pages/office/office-show-employee-details/office-show-employee-details.component';
+import { OfficeCurrentlyOnLeaveComponent } from './pages/office/office-currently-on-leave/office-currently-on-leave.component';
+import { MainLayoutComponent } from './layout/main-layout/main-layout/main-layout.component';
+import { DashboardComponent } from './pages/common/dashboard/dashboard.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { LoaderComponent } from './components/loader/loader.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent,
-    FooterComponent,
     LoginComponent,
     SignupComponent,
     ApprovalComponent,
-    SetupEmployeeProfileComponent,
+    SetEmployeeProfileComponent,
+    EmployeeMyProfileComponent,
+    EmployeeUpdateMyProfileComponent,
+    EmployeeApplyLeaveComponent,
+    EmployeeApplicationStatusComponent,
+    EmployeeGiveAttendanceComponent,
+    SetOfficeProfileComponent,
+    OfficeMyProfileComponent,
+    UpdateOfficeInformationComponent,
+    ShowAllEmployeeComponent,
+    OfficeRegistrationRequestsComponent,
+    OfficeAllLeaveRequestsComponent,
+    OfficeShowEmployeeDetailsComponent,
+    OfficeCurrentlyOnLeaveComponent,
+    MainLayoutComponent,
     DashboardComponent,
-    LayoutComponent,
-    EmployeeProfileComponent,
-    UpdateEmployeeProfileComponent,
-    GiveAttendanceComponent,
-    ApplicationStatusComponent,
-    ApplyForLeaveComponent,
-    AdminProfileComponent,
-    EmployeeRegistrationRequestComponent,
-    EmployeeLeaveRequestComponent,
-    EmployeeOnLeaveListComponent,
-    AllRegisteredEmployeesComponent,
-    UpdateCompnayInformationComponent
+    HeaderComponent,
+    FooterComponent,
+    LoaderComponent
   ],
   imports: [
     BrowserModule,
