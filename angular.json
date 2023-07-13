@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "employee-management-client": {
+    "employee-attendance-system": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/employee-management-client",
+            "outputPath": "dist/employee-attendance-system",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "employee-management-client:build:production"
+              "browserTarget": "employee-attendance-system:build:production"
             },
             "development": {
-              "browserTarget": "employee-management-client:build:development"
+              "browserTarget": "employee-attendance-system:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "employee-management-client:build"
+            "browserTarget": "employee-attendance-system:build"
           }
         },
         "test": {
