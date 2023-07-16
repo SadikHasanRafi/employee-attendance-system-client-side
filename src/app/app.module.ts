@@ -3,18 +3,23 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LayoutComponent } from './layout/layout.component';
-import { PagesComponent } from './pages/pages.component';
+import { NavbarComponent } from './shared/components/navbar/navbar.component';
+import { FooterComponent } from './shared/components/footer/footer.component';
+import { LoginModule } from './authentication/login/login.module';
+import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    LayoutComponent,
-    PagesComponent
+    NavbarComponent,
+    FooterComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    LoginModule
   ],
   providers: [],
   bootstrap: [AppComponent]
