@@ -1,12 +1,11 @@
 
-<p>dashboard works!</p>
 
 <div class="drawer lg:drawer-open">
     <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
     <div class="drawer-content flex flex-col items-center justify-center">
       <!-- Page content here -->
       <label for="my-drawer-2" class="btn btn-primary drawer-button lg:hidden">Open drawer</label>
-      <p>mew</p>
+      <!-- <p>mew</p> -->
       <router-outlet></router-outlet>
     
     </div> 
@@ -15,21 +14,18 @@
       <ul class="menu p-4 w-80 h-full bg-base-200 text-base-content">
         <!-- Sidebar content here -->
 
-        
+        <li routerLinkActive="active" ><a routerLink="employee-profile">My profile</a></li>
+        <li routerLinkActive="active" ><a routerLink="employee-update-profile">Update Profile</a></li>
+        <li routerLinkActive="active" ><a routerLink="employee-apply-leave">Apply For Leave</a></li>
+        <li routerLinkActive="active" ><a routerLink="employee-application-status" >Application Status</a></li>
+        <li routerLinkActive="active" ><a routerLink="employee-give-attendance">Give Attendance</a></li>
 
-
-        <li><a routerLink="employee-profile">My profile</a></li>
-        <li><a routerLink="employee-update-profile">Update Profile</a></li>
-        <li><a routerLink="employee-apply-leave">Apply For Leave</a></li>
-        <li><a routerLink="employee-application-status" >Application Status</a></li>
-        <li><a routerLink="employee-give-attendance">Give Attendance</a></li>
-
-        <li><a routerLink="company-profile">Office Profile</a></li>
-        <li><a routerLink="company-employee-registration-request" >Registration Requests</a></li>
-        <li><a routerLink="company-all-leave-request" >Leave Requests</a></li>
-        <li><a routerLink="company-currently-on-leave">Currently On Leave</a></li>
-        <li><a routerLink="company-show-all-employee">Show All Employees</a></li>
-        <li><a routerLink="company-update-information">Update Office Information</a></li>
+        <li routerLinkActive="active" ><a routerLink="company-profile">Office Profile</a></li>
+        <li routerLinkActive="active" ><a routerLink="company-employee-registration-request" >Registration Requests</a></li>
+        <li routerLinkActive="active" ><a routerLink="company-all-leave-request" >Leave Requests</a></li>
+        <li routerLinkActive="active" ><a routerLink="company-currently-on-leave">Currently On Leave</a></li>
+        <li routerLinkActive="active" ><a routerLink="company-show-all-employee">Show All Employees</a></li>
+        <li routerLinkActive="active" ><a routerLink="company-update-information">Update Office Information</a></li>
 
       </ul>
     

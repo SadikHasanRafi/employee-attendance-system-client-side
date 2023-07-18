@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { SetEmployeeProfileRoutingModule } from './set-employee-profile-routing.module';
 import { SetEmployeeProfileComponent } from './set-employee-profile.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { SetEmployeeProfileComponent } from './set-employee-profile.component';
   ],
   imports: [
     CommonModule,
-    SetEmployeeProfileRoutingModule
+    SetEmployeeProfileRoutingModule,
+    FormsModule
   ]
 })
 export class SetEmployeeProfileModule { }

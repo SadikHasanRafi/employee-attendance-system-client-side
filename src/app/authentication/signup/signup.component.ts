@@ -16,7 +16,7 @@ export class SignupComponent {
 
   constructor(
     private fb: FormBuilder ,
-    private auth:AuthenticationService
+    // private auth:AuthenticationService
   ) { }
 
 
@@ -39,8 +39,8 @@ export class SignupComponent {
 
 
 
-  private router = inject(Router)
-  goToLogin(){
-    this.router.navigate(['/login'])
-  }
+  // private router = inject(Router)
+  // goToLogin(){
+  //   this.router.navigate(['/login'])
+  // }
 }

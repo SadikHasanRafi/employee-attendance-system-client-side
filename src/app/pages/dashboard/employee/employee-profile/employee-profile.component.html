@@ -1,1 +1,45 @@
-<p>employee-profile works!</p>
+<p>{{this.employeeName}}</p>
+<p>Email : {{this.employeeEmail}}</p>
+<p>Phone number : {{this.employeePhoneNumber}}</p>
+<p>Designation : {{this.employeeDesignation}}</p>
+<div class="avatar">
+    <div class="w-24 rounded-full">
+        <img src="./../../../../assets//113110 (1).jpg" />
+    </div>
+  </div>
+
+
+
+
+  <div class="overflow-x-auto">
+    <table class="table">
+      <!-- head -->
+      <thead>
+        <tr>
+          <th></th>
+          <th>Total Leave</th>
+          <th>Remaining Leave</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- row 1 -->
+        <tr class="hover">
+          <th>Casual Leave</th>
+          <td>{{this.totalCasualLeave}}</td>
+          <td>{{this.remainingCasualLeave}}</td>
+        </tr>
+        <!-- row 2 -->
+        <tr class="hover">
+          <th>Sickness Leave</th>
+          <td>{{this.totalSicknessLeave}}</td>
+          <td>{{this.remainingSicknessLeave}}</td>
+        </tr>
+        <!-- row 3 -->
+        <tr class="hover">
+          <th>Annual Leave</th>
+          <td>{{this.totalAnnualLeave}}</td>
+          <td>{{this.remainingAnnualLeave}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

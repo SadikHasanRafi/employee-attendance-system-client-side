@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { SetOfficeProfileRoutingModule } from './set-office-profile-routing.module';
 import { SetOfficeProfileComponent } from './set-office-profile.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { SetOfficeProfileComponent } from './set-office-profile.component';
   ],
   imports: [
     CommonModule,
-    SetOfficeProfileRoutingModule
+    SetOfficeProfileRoutingModule,
+    FormsModule
   ]
 })
 export class SetOfficeProfileModule { }
