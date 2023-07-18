@@ -4,20 +4,24 @@
    
 
     <div class="card w-[400px] flex-shrink-0  max-w-sm shadow-2xl bg-base-100">
-      <div class="card-body ">
+      
+      
+      
+      <form class="card-body"  (ngSubmit)="handleLoginFormSubmit()"  [formGroup]="logInForm"  >
         <p class="text-3xl font-bold text-center">Login</p>
 
         <div class="form-control">
           <label class="label">
             <span class="label-text">Email</span>
           </label>
-          <input type="text" placeholder="email" class="input input-bordered" />
+          <input type="text"  formControlName="email" placeholder="email" class="input input-bordered" />
         </div>
         <div class="form-control">
           <label class="label">
             <span class="label-text">Password</span>
           </label>
           <input
+          formControlName="password"
             type="text"
             placeholder="password"
             class="input input-bordered"
@@ -28,9 +32,12 @@
           </label>
         </div>
         <div class="form-control mt-6">
-          <button class="btn btn-primary">Login</button>
+          <button type="submit" class="btn btn-primary">Login</button>
         </div>
-      </div>
+      </form>
+
+
+
     </div>
 
 

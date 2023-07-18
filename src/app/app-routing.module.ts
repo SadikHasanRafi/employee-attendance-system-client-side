@@ -1,9 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { LoginComponent } from './authentication/login/login.component';
 
 const routes: Routes = [
     {
       path: '', pathMatch: 'full', redirectTo: 'login',
+    },{
+      path:"login",
+      component:LoginComponent
     },{
       path:"signup",
       loadChildren:()=>import("./authentication/signup/signup.module").then(m=>m.SignupModule)
@@ -15,6 +19,7 @@ const routes: Routes = [
       loadChildren:()=>import("./pages/dashboard/dashboard.module").then(m=>m.DashboardModule)
     },{
       path:"set-employee-profile",
+      // component:SetEmployeeProfileComponent,
       loadChildren:()=>import("./pages/set-employee-profile/set-employee-profile.module").then(m=>m.SetEmployeeProfileModule)
     },{
       path:"set-office-profile",

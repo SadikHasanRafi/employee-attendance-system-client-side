@@ -1,3 +1,4 @@
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -6,21 +7,19 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/components/navbar/navbar.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { LoginModule } from './authentication/login/login.module';
-import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    FooterComponent,
-    PageNotFoundComponent
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     LoginModule
-  ],
+   ],
   providers: [],
   bootstrap: [AppComponent]
 })

@@ -5,27 +5,31 @@
         <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
       </div>
       <div class="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-        <div class="card-body">
+       
+       
+
+        <form class="card-body" (ngSubmit)="handleSignupFormSubmit()"  [formGroup]="signUpForm"  >
           <div class="form-control">
             <label class="label">
               <span class="label-text">Email</span>
             </label>
-            <input type="text" placeholder="email" class="input input-bordered" />
+            <input type="text" formControlName="email" placeholder="email" class="input input-bordered" />
           </div>
           <div class="form-control">
             <label class="label">
               <span class="label-text">Password</span>
             </label>
-            <input type="text" placeholder="password" class="input input-bordered" />
-              <a routerLink="/login" class="label-text-alt link link-hover">Already a user?</a>
-        <!-- <a routerLink="signup" class="btn btn-outline btn-primary">Sign up</a> -->
-
-            
+            <input type="text"  formControlName="password" placeholder="password" class="input input-bordered" />
+              <a routerLink="/login" class="label-text-alt link link-hover">Already a user?</a>  
           </div>
           <div class="form-control mt-6">
-            <button routerLink="/approval" class="btn btn-primary">Sign up</button>
+            <button type="submit" class="btn btn-primary">Sign up</button>  
+            <!-- routerLink="/approval" -->
           </div>
-        </div>
+        </form>
+
+
+
       </div>
     </div>
   </div>
