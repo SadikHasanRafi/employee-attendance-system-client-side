@@ -1,1 +1,69 @@
-<p>employee-apply-leave works!</p>
+
+<div class="h-[81.5vh] grid content-center">
+
+
+
+    <p class="flex justify-center m-6">Apply For Leave</p>
+
+<form  #leaveApplication="ngForm" (ngSubmit)="onSubmit(leaveApplication)">
+
+
+    <div class="flex justify-center  justify-items-center">
+
+
+
+
+    
+        <div class="grid grid-cols-2 gap-6" >
+
+            
+            <div class="form-control w-full max-w-xs">
+                <label class="label">
+                  <span class="label-text">Update you phone number</span>
+                </label>
+                <input name="leaveReason" ngModel type="text" placeholder="Type here" class="input input-bordered input-primary w-full max-w-xs" />
+              </div>
+            
+              <div >
+                <label class="label">
+                  <span class="label-text">Your selected leave type {{ selectedOption }}</span>
+                </label>
+                  <select id="power" required [(ngModel)]="selectedOption" name="leaveTypes"  class="select  input input-bordered input-primary w-full max-w-xs">
+                    <!-- <option disabled selected>Select leave type</option> -->
+                    <option *ngFor="let option of leaveTypes" [value]="option" >{{option}}</option>
+                  </select>
+                </div>  
+        </div>
+
+        </div>
+        
+        
+        <div class="grid grid-cols-1 ">
+          <label class="label">
+            <span class="label-text">Update your address</span>
+          </label>
+          <textarea name="leaveReasonDescription" ngModel type="text" placeholder="Type here" class="textarea textarea-primary"></textarea>             
+        </div>
+        
+        
+        <div class="flex justify-center m-4">
+            <button type="submit" class="btn btn-secondary ">Update your profile</button>
+        </div>
+
+
+</form>
+
+
+
+
+</div>
+
+
+
+<!-- <form #itemForm="ngForm" (ngSubmit)="onSubmit(itemForm)">
+    <label for="name">Name</label>
+    <input type="text" id="name" class="form-control" name="name" ngModel required />
+    <label for="name">Name</label>
+    <input type="text" id="name" class="form-control" name="email" ngModel required />
+    <button type="submit">Submit</button>
+  </form> -->

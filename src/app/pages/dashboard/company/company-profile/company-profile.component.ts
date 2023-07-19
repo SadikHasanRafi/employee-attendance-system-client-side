@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./company-profile.component.css']
 })
 export class CompanyProfileComponent {
-
+  administratorName:string="Sajeda Aktar Shanta"
+  email:string="company-hr@gmail.com"
+  phoneNumber:string="01522632470"
+  address:string="Mohammadpur, Dhaka-1207"
 }

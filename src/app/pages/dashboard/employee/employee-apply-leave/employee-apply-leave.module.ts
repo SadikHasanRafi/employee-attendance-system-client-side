@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { EmployeeApplyLeaveRoutingModule } from './employee-apply-leave-routing.module';
 import { EmployeeApplyLeaveComponent } from './employee-apply-leave.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { EmployeeApplyLeaveComponent } from './employee-apply-leave.component';
   ],
   imports: [
     CommonModule,
-    EmployeeApplyLeaveRoutingModule
+    EmployeeApplyLeaveRoutingModule,
+    FormsModule
   ]
 })
 export class EmployeeApplyLeaveModule { }

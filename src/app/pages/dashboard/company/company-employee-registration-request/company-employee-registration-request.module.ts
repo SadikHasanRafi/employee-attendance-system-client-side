@@ -11,7 +11,7 @@ import { CompanyEmployeeRegistrationRequestComponent } from './company-employee-
   ],
   imports: [
     CommonModule,
-    CompanyEmployeeRegistrationRequestRoutingModule
+    CompanyEmployeeRegistrationRequestRoutingModule,
   ]
 })
 export class CompanyEmployeeRegistrationRequestModule { }

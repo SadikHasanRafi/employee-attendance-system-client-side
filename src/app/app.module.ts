@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/components/navbar/navbar.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { LoginModule } from './authentication/login/login.module';
+import { HttpClientModule } from '@angular/common/http'; // Import HttpClientModule
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { LoginModule } from './authentication/login/login.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    LoginModule
+    LoginModule,
+    HttpClientModule
    ],
   providers: [],
   bootstrap: [AppComponent]

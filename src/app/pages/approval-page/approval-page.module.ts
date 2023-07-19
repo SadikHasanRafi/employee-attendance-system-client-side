@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { ApprovalPageRoutingModule } from './approval-page-routing.module';
 import { ApprovalPageComponent } from './approval-page.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { ApprovalPageComponent } from './approval-page.component';
   ],
   imports: [
     CommonModule,
-    ApprovalPageRoutingModule
+    ApprovalPageRoutingModule,
+    FormsModule
   ]
 })
 export class ApprovalPageModule { }
