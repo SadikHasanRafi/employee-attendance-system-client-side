@@ -8,7 +8,8 @@ import { NavbarComponent } from './shared/components/navbar/navbar.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { LoginModule } from './authentication/login/login.module';
 import { HttpClientModule } from '@angular/common/http';
-import { TestingComponent } from './testing/testing.component'; // Import HttpClientModule
+import { TestingComponent } from './testing/testing.component';
+import { Test2Component } from './test2/test2.component'; // Import HttpClientModule
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { TestingComponent } from './testing/testing.component'; // Import HttpCl
     AppComponent,
     NavbarComponent,
     FooterComponent,
-    TestingComponent
+    TestingComponent,
+    Test2Component
   ],
   imports: [
     BrowserModule,
