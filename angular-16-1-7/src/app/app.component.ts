@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import cat from './cat';
 
 @Component({
   selector: 'app-root',
@@ -8,8 +7,6 @@ import cat from './cat';
 })
 export class AppComponent {
   title = 'angular-16-1-7';
-  public cat:cat ;
-
 
 
 }
