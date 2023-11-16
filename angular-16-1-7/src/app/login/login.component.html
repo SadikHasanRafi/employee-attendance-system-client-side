@@ -1,1 +1,8 @@
-<p>login works!</p>
+<input type="email" placeholder="Enter Your Email" [(ngModel)]="email" />
+<input type="email" placeholder="Enter Your Password" [(ngModel)]="password" />
+<button
+  (click)="submit()"
+  class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+  Submit
+</button>
+<p>{{ loading }}</p>
